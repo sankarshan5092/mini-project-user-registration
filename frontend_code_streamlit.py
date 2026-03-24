@@ -3,10 +3,11 @@ import mysql.connector
 
 # ---------------- DATABASE ----------------
 connection_object = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Sankarshan@1997",
-    database="curd_nov_2025_mini_project_db"
+    host=st.secrets["DB_HOST"],
+    user=st.secrets["DB_USER"],
+    password=st.secrets["DB_PASSWORD"],
+    database=st.secrets["DB_NAME"],
+    port=int(st.secrets["DB_PORT"])
 )
 cursor_object = connection_object.cursor()
 
