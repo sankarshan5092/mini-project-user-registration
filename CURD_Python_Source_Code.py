@@ -1,6 +1,6 @@
 #This is a new comment added 22/03/2026 21:17 IST
 import mysql.connector #mysql=Module,connector=Class Name
-connection_object=mysql.connector.connect(host="localhost",user="root",password="XXXXXXXX",database="curd_nov_2025_mini_project_db")
+connection_object=mysql.connector.connect(host="localhost",user="root",password="Sankarshan@1997",database="curd_nov_2025_mini_project_db")
 cursor_object=connection_object.cursor()
 #Creating a function for inserting data
 def datainsert(full_name,address,ph_no,user_id,password):
